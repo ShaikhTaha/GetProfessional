@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/navigation_header"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="1dp"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="1dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <ImageView
+                    android:id="@+id/customerPhoto"
+                    android:layout_width="140dp"
+                    android:layout_height="115dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Profile Photo Image"
+                    android:src="@drawable/gp_icon_without_bg" />
+
+                <TextView
+                    android:id="@+id/navCustomerName"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/customerPhoto"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="2dp"
+                    android:text="Customer Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/btn_text"
+                    android:fontFamily="@string/app_font"/>
+
+                <TextView
+                    android:id="@+id/navCustomeEmail"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/navCustomerName"
+                    android:layout_centerHorizontal="true"
+                    android:text="customer_email@gmail.com"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/btn_text"
+                    android:fontFamily="serif-monospace"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/navigation_footer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/navigation_header"
+                android:background="#fafafa">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/navigation_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/developer_name"
+                    android:layout_below="@id/navigation_recycler_view"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Developer :  Shaikh Taha"
+                    android:textSize="10sp"
+                    android:textColor="#F7F5F5"
+                    android:fontFamily="sans-serif-smallcaps"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

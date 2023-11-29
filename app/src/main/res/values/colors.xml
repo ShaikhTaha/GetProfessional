@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CF0202</color>
+    <color name="colorPrimaryDark">#CF0202</color>
+    <color name="colorAccent">#F10000</color>
+
+    <color name = "navDrawerBg">#e3e3e3</color>
+    <color name = "navItemBg">#ffffff</color>
+    <color name = "appBg">#e3e3e3</color>
+    <color name = "appTitleText">#000000</color>
+    <color name = "appDetailText">#212121</color>
+    <color name = "appFrontBg">#ffffff</color>
+    <color name = "btn_text">#ffffff</color>
+
+</resources>

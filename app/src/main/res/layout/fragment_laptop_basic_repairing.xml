@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_laptop_servicing_layout"
+    android:background="@color/appFrontBg">
+
+    <ImageView
+        android:id="@+id/lbr_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/laptop_basic_repairing"
+        android:layout_marginBottom="4dp"/>
+
+    <View
+        android:layout_below="@id/lbr_image"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/appBg"/>
+
+    <TextView
+        android:id="@+id/lbr_text"
+        android:layout_below="@id/lbr_image"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/laptop_basic_repairing_title"
+        android:textSize="25sp"
+        android:textColor="@color/appTitleText"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/lbr_price"
+        android:layout_below="@id/lbr_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/lbr_price"
+        android:textSize="20sp"
+        android:textColor="@color/appTitleText"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/lbr_deptn"
+        android:layout_below="@id/lbr_price"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:fontFamily="@string/app_font"
+        android:text="@string/laptop_basic_repairing_deptn"
+        android:textStyle="normal"
+        android:textColor="@color/appTitleText"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_below="@id/ls_deptn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/ls_book_btn"
+            android:layout_below="@id/ls_deptn"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|end"
+            android:background="@color/colorAccent"
+            android:text="@string/book_btn_text"
+            android:textColor="@color/btn_text"
+            android:textSize="15.5sp"
+            android:fontFamily="@string/app_font"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

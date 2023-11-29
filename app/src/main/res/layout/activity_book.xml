@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Book">
+
+    <View
+        android:id="@+id/bf_view1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/bf_gtitle"
+        android:layout_below="@id/bf_view1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal|center_vertical|center"
+        android:text="Please Select Date And Time."
+        android:fontFamily="@string/app_font"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/appTitleText"/>
+
+    <View
+        android:id="@+id/bf_view2"
+        android:layout_below="@id/bf_gtitle"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_below="@id/bf_view2"
+        android:background="@color/appBg"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="23-02-2019"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_below="@id/btn_date"
+        android:background="@color/appBg"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:text="4:00 PM"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@id/btn_time"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#00C853"
+        android:text="Confirm Booking"
+        android:fontFamily="@string/app_font"
+        android:textColor="@color/btn_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:onClick="btnConfirmBooking"/>
+
+</RelativeLayout>
